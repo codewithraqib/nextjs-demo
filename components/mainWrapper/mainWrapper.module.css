@@ -1,0 +1,40 @@
+.main_wrapper{
+    color: #000;
+    
+    .image_parent{
+        width: 94%;
+        margin: 0px 3%;
+       .image_{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .main_head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+.head{
+    margin: 5px 0;
+    color: #000;
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+.sub_head{
+    margin: 5px 0;
+    font-weight: bold; 
+}
+.button_head{
+    margin: 10px 5px 0;  
+    .button_{
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        cursor: pointer;
+    }   
+}
+}
+}
