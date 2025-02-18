@@ -1,15 +1,24 @@
-.subItemsWrapper{
-    display: flex;
-    flex-direction: column;
+.dropdown_Wrapper {
+  display: flex;
+  justify-content: center;
 
-    transition: all 0.3s ease-in-out;
-
-    .subItem{
-        font-size: 14px;
-        font-weight: 400;
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-        display: block;
+  .dropdown_Inner {
+    width: 60vw;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      .singleItem_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .subHeads {
+          font-size: 36px;
+        }
+        .single_item {
+          font-size: 16px;
+        }
+      }
     }
+  }
 }
