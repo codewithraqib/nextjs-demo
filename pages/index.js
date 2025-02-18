@@ -9,6 +9,10 @@ export default function Home() {
 
       <SecondaryNav />
       <PrimaryNav />
+      <PrimaryNav />
+      <PrimaryNav />
+      <PrimaryNav />
+      <PrimaryNav />
 
     </div>
   );
