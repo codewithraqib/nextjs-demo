@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
 
-
   .dropdown_inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
 
-    .single_main_item{
+    .single_main_item {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      min-width: 20vw;
+      min-width: 240px;
     }
   }
 }
