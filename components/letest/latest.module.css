@@ -7,22 +7,26 @@
     padding: 20px 0;
   }
   .latest_item_container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: space-between; */
+    gap: 10px;
     width: 100%;
     .latest_item {
       display: flex;
       flex-direction: column;
       gap: 40px;
-      width: 410px;
+      /* width: 410px; */
       .latest_image {
         height: 500px;
         width: 100%;
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
-      .latest_image img {
-        width: 100%;
-        height: 100%;
-      }
+
       .item_name {
         font-size: 18px;
         color: rgb(125, 118, 118);
