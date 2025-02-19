@@ -4,6 +4,7 @@ import SecondaryNav from "../components/secondary-nav";
 import styles from "../styles/Home.module.css";
 import Offers from "../components/offers";
 import HeroComponent from "../components/hero-component";
+import Gap from "../components/gap";
 
 export default function Home() {
 
@@ -30,7 +31,9 @@ export default function Home() {
       <PrimaryNav />
       <Offers />
       <HeroComponent data={data} />
+      <Gap height={40} />
       <Latest />
+      <Gap height={100} />
       <HeroComponent data={data2} />
     </div>
   );

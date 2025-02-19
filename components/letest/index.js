@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import styles from "./latest.module.css";
 
 function Latest() {
@@ -26,25 +25,21 @@ function Latest() {
   };
 
   return (
-    <>
-      <div className={styles.latest_wrapper}>
-        <div className={styles.latest_inner}>
-          <div className={styles.latest_title}> {latest.title}</div>
-          <div className={styles.latest_item_container}>
-            {latest.subItems.map((subItem) => {
-              return (
-                <div className={styles.latest_item}>
-                  <div className={styles.latest_image}>
-                    <img className={styles.image} src={subItem.image} alt="" />
-                  </div>
-                  <span className={styles.item_name}>{subItem.name}</span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+    <div className={styles.latest_inner}>
+      <div className={styles.latest_title}> {latest.title}</div>
+      <div className={styles.latest_item_container}>
+        {latest.subItems.map((subItem) => {
+          return (
+            <div className={styles.latest_item}>
+              <div className={styles.latest_image}>
+                <img className={styles.image} src={subItem.image} alt="" />
+              </div>
+              <span className={styles.item_name}>{subItem.name}</span>
+            </div>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 }
 export default Latest;
