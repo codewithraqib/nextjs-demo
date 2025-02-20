@@ -1,0 +1,45 @@
+.filtersHeading {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 48px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+
+
+    .headingLeft {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000000;
+    }
+
+    .controlsRight {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .filterItem {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 18px;
+
+            .filterIcon {
+                height: 20px;
+                width: auto;
+                margin-bottom: 4px;
+
+
+                &:hover {
+                    background-color: #E0E0E0;
+                }
+            }
+
+        }
+    }
+}

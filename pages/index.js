@@ -7,6 +7,7 @@ import HeroComponent from "../components/hero-component";
 import Gap from "../components/gap";
 import MemberBenifits from "../components/member-benifits";
 import Footer from "../components/footer";
+import BenifitCatagories from "../components/benifit-categories";
 
 export default function Home() {
   let data = {
@@ -26,6 +27,53 @@ export default function Home() {
     image: "/assets/images/mainWrapper/Screenshot25.png",
   };
 
+  const memberBenifitsData = {
+    items: [
+      {
+        id: 0,
+        heading: "Member Product",
+        subHeading: "Your Exclusive Access",
+        btn: "Shop",
+        image: "./assets/images/member-benifits/member1.jpg",
+      },
+      {
+        id: 1,
+        heading: "Nike By You",
+        subHeading: "Your Customisation Service",
+        btn: "Customise",
+        image: "./assets/images/member-benifits/member2.png",
+      },
+      {
+        id: 2,
+        heading: "Member Rewards",
+        subHeading: "How We Say Thank You",
+        btn: "Celebrate",
+        image: "./assets/images/member-benifits/member3.jpg",
+      },
+      {
+        id: 3,
+        heading: "Member Days",
+        subHeading: "A Celebration Of You",
+        btn: "Learn More",
+        image: "./assets/images/member-benifits/member4.png",
+      },
+      {
+        id: 4,
+        heading: "Sport And Wellness Apps",
+        subHeading: "Movement Where You Are",
+        btn: "Move",
+        image: "./assets/images/member-benifits/member5.jpg",
+      },
+      {
+        id: 5,
+        heading: "SNKRS",
+        subHeading: "Your Ultimate Sneaker Community",
+        btn: "Explore",
+        image: "./assets/images/member-benifits/member6.jpg",
+      },
+    ],
+  };
+
   return (
     <div className={styles.container}>
       <SecondaryNav />
@@ -36,7 +84,9 @@ export default function Home() {
       <Latest />
       <Gap height={100} />
       <HeroComponent data={data2} />
-      <MemberBenifits />
+      <MemberBenifits title="Shop By Sport" showExtraData={false} data={memberBenifitsData} />
+      <MemberBenifits title={"Member Benifits"} showExtraData={true} data={memberBenifitsData} />
+      <BenifitCatagories />
       <Footer />
     </div>
   );
