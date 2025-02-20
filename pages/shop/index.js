@@ -284,8 +284,6 @@ const ShopPage = () => {
                             </ul>
 
                         </div>
-
-
                     </div>
                     <div className={styles.productSection}>
                         {products.map((product) => (
