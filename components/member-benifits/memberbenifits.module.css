@@ -1,0 +1,61 @@
+.benifits_inner {
+  margin: 70px 5vw;
+
+  .title {
+    font-size: 24px;
+    color: rgba(117, 54, 54, 0.994);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 14px;
+  }
+
+  .card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    overflow-x: scroll;
+
+    .card {
+      position: relative;
+      width: 28vw;
+      cursor: pointer;
+
+      .image {
+        width: 100%;
+      }
+
+      .card_text {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+
+        .heading {
+          font-size: 16px;
+        }
+
+        .subHeading {
+          font-size: 24px;
+        }
+
+        .btn {
+          width: fit-content;
+          height: 40px;
+          padding: 10px 40px;
+          border-radius: 20px;
+          border: none;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgb(204, 204, 204);
+          }
+        }
+      }
+    }
+  }
+}
